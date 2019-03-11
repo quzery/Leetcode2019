@@ -1,0 +1,6 @@
+﻿  setup.cpp
+d:\vs2017_project\leetcode\leetcode_012\leetcode_012\setup.cpp(48): warning C4101: 'b': unreferenced local variable
+d:\vs2017_project\leetcode\leetcode_012\leetcode_012\setup.cpp(48): warning C4101: 'q': unreferenced local variable
+d:\vs2017_project\leetcode\leetcode_012\leetcode_012\setup.cpp(48): warning C4101: 's': unreferenced local variable
+d:\vs2017_project\leetcode\leetcode_012\leetcode_012\setup.cpp(48): warning C4101: 'g': unreferenced local variable
+  leetcode_012.vcxproj -> D:\VS2017_project\Leetcode\leetcode_012\Debug\leetcode_012.exe
