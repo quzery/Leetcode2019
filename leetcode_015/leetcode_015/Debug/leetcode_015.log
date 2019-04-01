@@ -1,2 +1,3 @@
 ﻿  setup.cpp
+d:\vs2017_project\leetcode\leetcode_015\leetcode_015\setup.cpp(91): warning C4018: '<': signed/unsigned mismatch
   leetcode_015.vcxproj -> D:\VS2017_project\Leetcode\leetcode_015\Debug\leetcode_015.exe

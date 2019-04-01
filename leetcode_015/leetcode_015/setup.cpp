@@ -3,7 +3,7 @@
 #include<algorithm>
 
 using namespace std;
-
+/*
 bool is_exsit(vector<vector<int>> &, vector<int> &);
 bool is_equal(vector<int>&, vector<int>&);
 void print(vector<vector<int>>&);
@@ -29,7 +29,7 @@ public:
 						if (!is_exsit(sum, sum_sun)) 
 							sum.push_back(sum_sun);
 					}
-		return sum;*/
+		return sum;
 
 		sort(nums.begin(), nums.end(), [](int a, int b) {return a < b; });
 		for(size_t i=0;nums[i]<=0 && i<size-2;i++)
@@ -72,7 +72,7 @@ void swapt(int &a, int &b) {
 	a = b;
 	b = tmp;
 }
-
+*/
 void print(vector<vector<int>>& sum) {
 	for (size_t i = 0; i < sum.size(); i++) {
 		for (size_t j = 0; j < sum[i].size(); j++)
@@ -81,6 +81,32 @@ void print(vector<vector<int>>& sum) {
 	}
 }
 
+
+class Solution {
+public:
+	vector<vector<int>> threeSum(vector<int>& nums) {
+		vector<vector<int>> res;
+		sort(nums.begin(), nums.end());
+		if (nums.empty() || nums.back() < 0 || nums.front() > 0) return {};
+		for (int k = 0; k < nums.size(); ++k) {
+			if (nums[k] > 0) break;
+			if (k > 0 && nums[k] == nums[k - 1]) continue;
+			int target = 0 - nums[k];
+			int i = k + 1, j = nums.size() - 1;
+			while (i < j) {
+				if (nums[i] + nums[j] == target) {
+					res.push_back({ nums[k], nums[i], nums[j] });
+					while (i < j && nums[i] == nums[i + 1]) ++i;
+					while (i < j && nums[j] == nums[j - 1]) --j;
+					++i; --j;
+				}
+				else if (nums[i] + nums[j] < target) ++i;
+				else --j;
+			}
+		}
+		return res;
+	}
+};
 
 int main() {
 	vector<int> aa{ -1, 0, 1, 2, -1, -4 };
