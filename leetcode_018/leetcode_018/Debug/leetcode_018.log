@@ -1,0 +1,4 @@
+﻿  setup.cpp
+d:\vs2017_project\leetcode\leetcode_018\leetcode_018\setup.cpp(14): warning C4018: '<': signed/unsigned mismatch
+d:\vs2017_project\leetcode\leetcode_018\leetcode_018\setup.cpp(16): warning C4018: '<': signed/unsigned mismatch
+  leetcode_018.vcxproj -> D:\VS2017_project\Leetcode\leetcode_018\Debug\leetcode_018.exe
