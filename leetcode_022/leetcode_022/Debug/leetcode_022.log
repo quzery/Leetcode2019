@@ -1,0 +1,5 @@
+﻿  Source.cpp
+d:\vs2017_project\leetcode\leetcode_022\leetcode_022\source.cpp(25): warning C4018: '>=': signed/unsigned mismatch
+d:\vs2017_project\leetcode\leetcode_022\leetcode_022\source.cpp(34): warning C4018: '<': signed/unsigned mismatch
+d:\vs2017_project\leetcode\leetcode_022\leetcode_022\source.cpp(43): warning C4018: '<': signed/unsigned mismatch
+  leetcode_022.vcxproj -> D:\VS2017_project\Leetcode\leetcode_022\Debug\leetcode_022.exe
